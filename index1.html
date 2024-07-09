@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestione Autofficina</title>
+    <link rel="stylesheet" href="style1.css">
+    <script src="java.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div id="branding">
+                <h1>Gestione Autofficina</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="view_tabelle.php">Visualizza Dati</a></li>
+                    <li><a href="aboutus.php">About Us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="intro">
+            <h2>Benvenuti nella Gestione dell'Autofficina</h2>
+            <p>Effettua il login o registrati per gestire i dati dell'autofficina.</p>
+        </section>
+
+        <section id="login">
+            <h2>Login</h2>
+            <form action="login_process.php" method="post">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required><br>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required><br>
+                
+                <input type="submit" value="Login">
+            </form>
+        </section>
+
+        <section id="register">
+            <h2>Registrazione</h2>
+            <form action="register_process.php" method="post">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required><br>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required><br>
+
+                <label for="officina_name">Nome Officina:</label>
+                <input type="text" id="officina_name" name="officina_name" required><br>
+                
+                <input type="submit" value="Registrati">
+            </form>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Gestione Autofficina</p>
+        </footer>
+    </div>
+</body>
+</html>
